@@ -1,0 +1,20 @@
+a = int(input())
+nums = []
+for i in range(a):
+    nums.append(int(input()))
+
+count = 0
+isEven = True
+while True:
+    for j in nums:
+        if j % 2 == 1:
+            isEven = False
+
+    if isEven:
+        for k in range(len(nums)):
+            nums[k] = nums[k] / 2
+        count += 1
+    else:
+        break
+
+print(count)
