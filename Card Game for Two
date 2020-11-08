@@ -1,0 +1,21 @@
+N = int(input())
+lis = []
+while N > 0:
+    lis.append(int(input()))
+    N -= 1
+#aliceとbobのターンを切り替える変数
+count = 0
+alice = 0
+bob = 0
+while len(lis) > 0:
+    if count % 2 == 0:
+        #add max value to alice
+        alice += max(lis)
+        lis.remove(max(lis))
+        count += 1
+    else:
+        #add max value to bob
+        bob += max(lis)
+        lis.remove(max(lis))
+        count += 1
+print('AliceはBobより{}点多く得点を獲得できます。'.format(alice - bob))
