@@ -1,0 +1,9 @@
+N = int(input())
+lis = []
+while N > 0:
+    lis.append(int(input()))
+    N -= 1
+
+s = set(lis)
+
+print('{}の{}種類です'.format(s,len(s)))
