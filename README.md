@@ -1,4 +1,4 @@
-# AtCodert
+# AtCoder
 #AtCoderの問題の回答を保存するリポジトリとなる。
 
 第 3 問: ABC 081 B - Shift Only
